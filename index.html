@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#173b63">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<title>Habibi Accounting</title>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="mark">HA</div><div><b>Habibi Accounting</b><small>سیستم حسابداری شرکت</small></div></div>
+  <span class="offline">آفلاین</span>
+</header>
+<main>
+  <section class="welcome"><div><small>داشبورد</small><h1>خوش آمدید</h1><p>مدیریت مالی شرکت، ساده و منظم</p></div><div class="date" id="today"></div></section>
+  <section class="stats">
+    <article><small>فروش امروز</small><strong id="todaySales">۰</strong><small>افغانی</small></article>
+    <article><small>مصارف امروز</small><strong id="todayExpenses">۰</strong><small>افغانی</small></article>
+    <article><small>دریافتنی مشتریان</small><strong id="receivables">۰</strong><small>افغانی</small></article>
+    <article><small>پرداختنی تأمین‌کنندگان</small><strong id="payables">۰</strong><small>افغانی</small></article>
+  </section>
+  <nav class="menu" aria-label="منوی اصلی">
+    <button data-page="sales">فروش</button><button data-page="purchases">خرید</button>
+    <button data-page="items">اجناس و انبار</button><button data-page="customers">مشتریان</button>
+    <button data-page="suppliers">تأمین‌کنندگان</button><button data-page="expenses">مصارف</button>
+    <button data-page="cash">صندوق و بانک</button><button data-page="reports">گزارش‌ها</button>
+    <button data-page="settings">تنظیمات و پشتیبان</button>
+  </nav>
+  <section id="page" class="panel">
+    <h2>فعالیت‌های اخیر</h2><p class="muted">هنوز معامله‌ای ثبت نشده است.</p>
+    <div id="recent"></div>
+  </section>
+</main>
+<footer>Habibi Accounting · نسخه آغازین</footer>
+<script src="app.js"></script>
+</body>
+</html>
